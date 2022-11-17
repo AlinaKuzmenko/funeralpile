@@ -1,0 +1,48 @@
+@import '../../theme/toRem';
+@import '../../theme/constants';
+
+
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0);
+  border-top: 1px solid rgba(0, 0, 0);
+  border-bottom: .5px solid rgba(255, 255, 255, .25);
+
+  ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: toRem($layoutWidth);
+    margin: 0 auto;
+
+    li {
+
+      a {
+        display: block;
+        color: rgba(255, 255, 255, 0.7);
+        padding: toRem(10);
+        font-size: toRem(16);
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: color .3s;
+
+        &:hover,
+        &.active {
+          color: white;
+        }
+      }
+
+      &.social {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        flex-basis: 200px;
+      }
+    }
+  }
+}

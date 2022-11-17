@@ -1,0 +1,10 @@
+@import '../../theme/toRem';
+@import '../../theme/constants';
+
+
+.layout {
+  max-width: toRem($layoutWidth);
+  min-height: 100vh;
+  margin: 0 auto;
+  color: white;
+}
