@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { links, socialLinks } from './links';
+import * as Icon  from '@fortawesome/fontawesome-free';
 import './styles.scss';
 
 
@@ -16,12 +17,14 @@ const Navigation = () => {
           </li>
         ))}
         <li className="social">
-          {socialLinks.map(({ to, text }) => (
+          {socialLinks.map(({ to, className }) => (
             <a
-              key={text}
+              key={to}
               href={to}
+              target="_blank"
+              rel="noreferrer"
             >
-              {text}
+              add img
             </a>
           ))}
         </li>

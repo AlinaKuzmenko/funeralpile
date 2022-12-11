@@ -1,15 +1,15 @@
 import React from 'react';
-import Main from '../../components/Main';
+import Section from '../../components/Section';
 import './styles.scss';
 
 
 const Unknown = () => {
   return (
-    <Main>
+    <Section>
       <div className="unknown">
         Page not found
       </div>
-    </Main>
+    </Section>
   )
 };
 

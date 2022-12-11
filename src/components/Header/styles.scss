@@ -1,13 +1,10 @@
 @import '../../theme/toRem';
+@import '../../theme/constants';
 
 
 .header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: toRem(400);
-  background-image: url(../../assets/header_bg.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: 23px;
+  height: toRem($headerHeight);
 }

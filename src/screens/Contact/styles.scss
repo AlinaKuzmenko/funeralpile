@@ -1,3 +1,26 @@
+@import '../../theme/toRem';
+
+
 .contact {
 
+  address {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .emails {
+    grid-column: span 1;
+  }
+
+  .mail {
+    grid-column: span 1;
+    line-height: toRem(24);
+  }
+
+  .phone {
+    display: block;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+  }
 }

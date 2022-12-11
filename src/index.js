@@ -15,7 +15,6 @@ import paths from './constants/paths';
 import Discography from './screens/Discography';
 import Merch from './screens/Merch';
 import Contact from './screens/Contact';
-import Impressum from './screens/Impressum';
 import DataPrivacy from './screens/DataPrivacy';
 import Unknown from './screens/Unknown';
 
@@ -27,7 +26,6 @@ const router = createBrowserRouter(
       <Route path={paths.discography} element={<Discography />} />
       <Route path={paths.merch} element={<Merch />} />
       <Route path={paths.contact} element={<Contact />} />
-      <Route path={paths.impressum} element={<Impressum />} />
       <Route path={paths.dataPrivacy} element={<DataPrivacy />} />
       <Route path={paths.unknown} element={<Unknown />} />
     </Route>

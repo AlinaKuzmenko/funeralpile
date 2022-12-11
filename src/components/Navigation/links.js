@@ -18,10 +18,6 @@ export const links = [
     text: 'merch'
   },
   {
-    to: paths.impressum,
-    text: 'impressum'
-  },
-  {
     to: paths.contact,
     text: 'contact'
   },
@@ -34,18 +30,18 @@ export const links = [
 export const socialLinks = [
   {
     to: 'https://www.facebook.com/funeralpile',
-    text: 'FB'
+    className: 'fa fa-facebook'
   },
   {
     to: 'https://www.instagram.com/funeralpileband/',
-    text: 'IG'
+    className: 'fa fa-instagram'
   },
   {
     to: 'https://www.youtube.com/channel/UC2k27LpnOnWGZICRbSS1zHA',
-    text: 'YT'
+    className: 'fa fa-youtube'
   },
   {
     to: 'https://open.spotify.com/artist/4hdHyjhM7DhCt0TW9O3QnN?si=l8cGWIYdT72kF8kOjEOs2g&nd=1',
-    text: 'SP'
+    className: 'fa fa-spotify'
   },
 ];

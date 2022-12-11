@@ -4,6 +4,12 @@
 .app {
   position: relative;
   min-height: 100vh;
-  background: black;
+  max-height: 100vh;
+  background-color: black;
+  background-image: url(./assets/header_bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 85%;
+  overflow: scroll;
 }
 

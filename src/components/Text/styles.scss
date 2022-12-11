@@ -1,0 +1,23 @@
+@import '../../theme/toRem';
+
+
+h1 {
+  margin-bottom: toRem(16);
+  color: white;
+  font-size: toRem(24);
+  font-weight: 700;
+}
+
+h2 {
+  margin-bottom: toRem(12);
+  color: white;
+  font-size: toRem(20);
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: toRem(10);
+  color: rgba(255, 255, 255, .8);
+  font-size: toRem(16);
+  line-height: toRem(24);
+}
