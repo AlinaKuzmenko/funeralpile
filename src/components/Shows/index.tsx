@@ -2,6 +2,7 @@ import { gigs, IGig } from './info';
 import Gig from '../Gig';
 import Heading2 from '../Heading2';
 import './styles.scss';
+import ContentBlock from '../ContentBlock';
 
 function sortByDate(a: IGig, b: IGig) {
   const aDate = a.date.getTime();
@@ -17,7 +18,7 @@ function sortByDate(a: IGig, b: IGig) {
 
 function Shows() {
   return (
-    <div className="shows">
+    <ContentBlock className="shows">
       <Heading2 className="heading">
         Shows
       </Heading2>
@@ -31,7 +32,7 @@ function Shows() {
             />
           ))}
       </div>
-    </div>
+    </ContentBlock>
   );
 }
 
