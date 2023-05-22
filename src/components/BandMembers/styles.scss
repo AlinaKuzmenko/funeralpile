@@ -1,0 +1,79 @@
+@import '../../theme/toRem';
+@import '../../theme/breakpoints';
+
+.bandMembers {
+  .h2 {
+    margin-bottom: toRem(16);
+  }
+  ul {
+    display: grid;
+    grid-template-columns: 2fr;
+    gap: toRem(8);
+    max-width: 100%;
+    li {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      figure {
+        width: 100%;
+        img {
+          min-width: 230px;
+          height: auto;
+          filter: grayscale(100%);
+        }
+        .figcaption {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          padding: toRem(8)
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $xs) {
+  .bandMembers {
+    ul {
+      grid-template-columns: repeat(4, 1fr);
+      gap: toRem(16);
+      li {
+        grid-column: span 2;
+        &:nth-child(5) {
+          grid-column: 2 / span 2;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $md) {
+  .bandMembers {
+    ul {
+      grid-template-columns: repeat(6, 1fr);
+      gap: toRem(24);
+      li {
+        grid-column: span 2;
+        &:nth-child(4) {
+          grid-column: 2 / span 2;
+        }
+        &:nth-child(5) {
+          grid-column: 4 / span 2;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $xl) {
+  .bandMembers {
+    ul {
+      gap: toRem(32);
+    }
+  }
+}

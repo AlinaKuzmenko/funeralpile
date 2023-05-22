@@ -1,0 +1,54 @@
+@import '../../theme/toRem';
+
+@import '../../theme/toRem';
+@import '../../theme/breakpoints';
+
+.shows {
+  .heading {
+    grid-column: span 2;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: toRem(16);
+  }
+  .figure {
+    width: 100%;
+    img {
+      height: auto;
+    }
+    figcaption {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media (min-width: $xs) {
+  .shows {
+   .container {
+      grid-template-columns: repeat(3, 1fr);
+      gap: toRem(16);
+    }
+  }
+}
+
+@media (min-width: $md) {
+  .shows {
+   .container {
+      grid-template-columns: repeat(4, 1fr);
+      gap: toRem(24);
+    }
+  }
+}
+
+@media (min-width: $xl) {
+  .shows {
+   .container {
+      grid-template-columns: repeat(6, 1fr);
+      gap: toRem(32);
+    }
+  }
+}
+

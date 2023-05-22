@@ -1,0 +1,34 @@
+@import './theme/breakpoints';
+
+#root {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  background-color: black;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: scroll;
+  &:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    content: '';
+    z-index: 0;
+  }
+}
+
+@media (min-width: $xl) {
+  #root {
+    background-image: url(./assets/header_bg.webp);
+  }
+}

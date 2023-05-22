@@ -1,0 +1,36 @@
+@import '../../theme/toRem';
+
+.contacts {
+  .container {
+    display: flex;
+    gap: toRem(12);
+    line-height: 1.2;
+    .email {
+      display: flex;
+      gap: toRem(4);
+      a {
+        color: inherit;
+        font-weight: bold;
+        line-height: inherit;
+        text-decoration: none;
+      }
+    }
+    &.column {
+      flex-direction: column;
+      justify-content: flex-start;
+      .email {
+        flex-direction: row;
+        gap: toRem(4);
+      }
+    }
+    &.row {
+      flex-direction: row;
+      justify-content: flex-start;
+      .email {
+        align-items: center;
+        flex-direction: row;
+        gap: toRem(4);
+      }
+    }
+  }
+}

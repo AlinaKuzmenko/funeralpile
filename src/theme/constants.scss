@@ -1,0 +1,15 @@
+@import './toRem';
+
+$headerH: 68;
+$footerH: 68;
+$layoutW: 1200;
+$contentPadding: 16;
+$contentShadowSpread: 20;
+
+$layoutWidth: toRem(1200);
+$layoutWidthWithShadow: toRem($layoutW + $contentShadowSpread * 2);
+$headerHeight: toRem($headerH);
+$footerHeight: toRem($footerH);
+$contentPaddingTop: toRem($headerH + $contentPadding);
+$contentPaddingBottom: toRem($footerH + $contentPadding);
+

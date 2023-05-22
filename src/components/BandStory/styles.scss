@@ -1,0 +1,8 @@
+@import '../../theme/toRem';
+@import '../../theme/breakpoints';
+
+.bandStory {
+  p:not(:last-child) {
+    margin-bottom: toRem(12);
+  }
+}

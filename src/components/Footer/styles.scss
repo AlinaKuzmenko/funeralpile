@@ -1,0 +1,24 @@
+@import '../../theme/toRem';
+@import '../../theme/constants';
+
+footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: $footerHeight;
+  margin: 0 auto;
+  padding: toRem(20);
+  border-top: .5px solid rgba(255, 255, 255, .25);
+  background-color: #000;
+  z-index: 2;
+  .container {
+    width: $layoutWidth;
+    padding: 0 toRem($contentPadding);
+  }
+  .text {
+    text-decoration-style: dotted;
+  }
+}

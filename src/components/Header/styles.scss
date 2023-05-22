@@ -1,0 +1,26 @@
+@import '../../theme/toRem';
+@import '../../theme/constants';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $headerHeight;
+  background-color: rgba(0, 0, 0, .5);
+  border-bottom: .5px solid rgba(255, 255, 255, .25);
+  backdrop-filter: blur(4px);
+  overflow: hidden;
+  z-index: 2;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: $layoutWidth;
+    height: 100%;
+    padding: 0 toRem($contentPadding);
+  }
+}

@@ -1,0 +1,46 @@
+@import '../../theme/toRem';
+
+.h1 {
+  font-size: toRem(24);
+  font-weight: 700;
+}
+
+.h2 {
+  font-size: toRem(20);
+  font-weight: 600;
+}
+
+.h3 {
+  font-size: toRem(16);
+  font-weight: 600;
+}
+
+.h4 {
+  font-size: toRem(14);
+  font-weight: 600;
+}
+
+.body1 {
+  font-size: toRem(18);
+  line-height: toRem(28);
+}
+
+.body2 {
+  font-size: toRem(16);
+  line-height: toRem(24);
+}
+
+.body3 {
+  font-size: toRem(14);
+  line-height: toRem(20);
+}
+
+.caption1 {
+  font-size: toRem(12);
+  line-height: toRem(14);
+}
+
+.caption2 {
+  font-size: toRem(10);
+  line-height: toRem(12);
+}

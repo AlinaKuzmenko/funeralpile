@@ -1,0 +1,10 @@
+@import '../../theme/toRem';
+
+.contentBlock {
+  padding: toRem(16);
+  background-color: rgba(0, 0, 0, .4);
+  border-radius: toRem(8);
+  box-shadow: 0 0 30px 2px rgba(255, 255, 255, .2);
+  overflow: hidden;
+  backdrop-filter: blur(2px);
+}

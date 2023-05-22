@@ -1,0 +1,29 @@
+@import '../../theme/toRem';
+
+.socialMedia {
+  display: flex;
+  align-items: center;
+  flex-basis: 150px;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  gap: toRem(12);
+  li {
+    display: flex;
+    align-items: center;
+    a {
+      display: flex;
+      align-items: center;
+      padding: toRem(8);
+      text-decoration: none;
+      opacity: .7;
+      transition: opacity .3s;
+      &:hover, &:focus-within  {
+        opacity: 1;
+      }
+      img {
+        width: toRem(24);
+        height: toRem(24);
+      }
+    }
+  }
+}

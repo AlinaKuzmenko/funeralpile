@@ -1,0 +1,27 @@
+@import '../../theme/toRem';
+
+.nav {
+
+  ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    li {
+      a {
+        display: block;
+        color: rgba(255, 255, 255, 0.7);
+        padding: toRem(10);
+        font-size: toRem(16);
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: color .3s;
+        &:hover,
+        &.active {
+          color: white;
+        }
+      }
+    }
+  }
+}
