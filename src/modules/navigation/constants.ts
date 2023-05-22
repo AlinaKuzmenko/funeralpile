@@ -1,5 +1,5 @@
 export const ROUTES = {
-  home: '/',
+  home: '/funeralpile',
   live: 'live',
   // dataPrivacy: 'data-privacy',
 };
