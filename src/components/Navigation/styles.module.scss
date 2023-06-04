@@ -1,7 +1,6 @@
 @import '../../theme/toRem';
 
 .nav {
-
   ul {
     display: flex;
     flex-wrap: nowrap;
@@ -18,7 +17,7 @@
         text-transform: uppercase;
         transition: color .3s;
         &:hover,
-        &.active {
+        &[class*=active] {
           color: white;
         }
       }

@@ -1,9 +1,9 @@
 import { ISocialLink, socialLinks } from './info';
-import './styles.scss';
+import styles from './styles.module.scss';
 
 function Contacts() {
   return (
-    <ul className="socialMedia">
+    <ul className={styles.socialMedia}>
       {socialLinks.map((link: ISocialLink) => (
         <li key={link.id}>
           <a

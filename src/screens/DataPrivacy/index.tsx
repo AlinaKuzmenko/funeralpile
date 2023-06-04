@@ -1,8 +1,8 @@
-import './styles.scss';
+import styles from './styles.module.scss';
 
 function DataPrivacy() {
   return (
-    <main className="dataPrivacy">
+    <main className={styles.dataPrivacy}>
       <h1>Data Privacy</h1>
     </main>
   );

@@ -1,11 +1,11 @@
 import Navigation from '../Navigation';
 import SocialMedia from '../SocialMedia';
-import './styles.scss';
+import styles from './styles.module.scss';
 
 function Header() {
   return (
-    <header className="header">
-      <div className="container">
+    <header className={styles.header}>
+      <div className={styles.container}>
         <Navigation />
         <SocialMedia />
       </div>

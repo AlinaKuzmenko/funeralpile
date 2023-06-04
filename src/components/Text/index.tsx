@@ -1,7 +1,7 @@
 import {
   IText, TextVariant, TTag, TTextVariant,
 } from './types';
-import './styles.scss';
+import styles from './styles.module.scss';
 
 function defineTag(variant: TTextVariant): TTag {
   switch (variant) {
@@ -25,7 +25,7 @@ function Text({
   const Tag = tag || defineTag(variant);
   return (
     <Tag
-      className={`${variant} ${className}`}
+      className={`${styles[variant]} ${className}`}
       {...rest}
     >
       {children}

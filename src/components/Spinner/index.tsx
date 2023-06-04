@@ -1,4 +1,4 @@
-import './styles.scss';
+import styles from './styles.module.scss';
 
 interface ISpinner {
   size?: number;
@@ -6,7 +6,7 @@ interface ISpinner {
 
 function Spinner({ size = 40 }: ISpinner) {
   return (
-    <div className="spinner" style={{ width: size, height: size }} />
+    <div className={styles.spinner} style={{ width: size, height: size }} />
   );
 }
 

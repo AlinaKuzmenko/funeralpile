@@ -1,9 +1,9 @@
 import Shows from '../../components/Shows';
-import './styles.scss';
+import styles from './styles.module.scss';
 
 function Live() {
   return (
-    <main className="live">
+    <main className={styles.live}>
       <Shows />
     </main>
   );

@@ -1,11 +1,11 @@
 import { useRouteError } from 'react-router-dom';
 import Text from '../../components/Text';
-import './styles.scss';
+import styles from './styles.module.scss';
 
 function Error() {
   const error: any = useRouteError();
   return (
-    <main className="error">
+    <main className={styles.error}>
       <Text variant="h1">
         Oops!
       </Text>

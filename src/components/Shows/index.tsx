@@ -1,7 +1,7 @@
 import { gigs, IGig } from './info';
 import Gig from '../Gig';
 import Heading2 from '../Heading2';
-import './styles.scss';
+import styles from './styles.module.scss';
 import ContentBlock from '../ContentBlock';
 
 function sortByDate(a: IGig, b: IGig) {
@@ -18,11 +18,11 @@ function sortByDate(a: IGig, b: IGig) {
 
 function Shows() {
   return (
-    <ContentBlock className="shows">
-      <Heading2 className="heading">
+    <ContentBlock className={styles.shows}>
+      <Heading2 className={styles.heading}>
         Shows
       </Heading2>
-      <div className="container">
+      <div className={styles.container}>
         {gigs
           .sort(sortByDate)
           .map((gig: IGig) => (

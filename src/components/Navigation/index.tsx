@@ -1,10 +1,10 @@
 import { NavLink } from 'react-router-dom';
 import { links } from './links';
-import './styles.scss';
+import styles from './styles.module.scss';
 
 function Navigation() {
   return (
-    <nav className="nav">
+    <nav className={styles.nav}>
       <ul>
         {links.map(({ to, text }) => (
           <li key={text}>

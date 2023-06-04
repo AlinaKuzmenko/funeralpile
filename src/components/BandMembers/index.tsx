@@ -3,7 +3,7 @@ import ContentBlock from '../ContentBlock';
 import Text from '../Text';
 import Figure from '../Figure';
 import Heading2 from '../Heading2';
-import './styles.scss';
+import styles from './styles.module.scss';
 
 interface IBandMembers {
   className?: string;
@@ -11,7 +11,7 @@ interface IBandMembers {
 
 function BandMembers({ className = '' }: IBandMembers) {
   return (
-    <ContentBlock className={`bandMembers ${className}`}>
+    <ContentBlock className={`${styles.bandMembers} ${className}`}>
       <Heading2>
         Lineup
       </Heading2>
@@ -22,7 +22,7 @@ function BandMembers({ className = '' }: IBandMembers) {
               image={{ src: member.image, alt: `${member.name} on stage` }}
               caption={(
                 <figcaption
-                  className="figcaption"
+                  className={styles.figcaption}
                 >
                   <Text variant="body2">
                     {member.name}

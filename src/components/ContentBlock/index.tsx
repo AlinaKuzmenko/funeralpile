@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.scss';
+import styles from './styles.module.scss';
 
 interface IContentBlock {
   className?: string;
@@ -7,7 +7,7 @@ interface IContentBlock {
 }
 function ContentBlock({ className, children }: IContentBlock) {
   return (
-    <div className={`contentBlock ${className}`}>
+    <div className={`${styles.contentBlock} ${className}`}>
       {children}
     </div>
   );

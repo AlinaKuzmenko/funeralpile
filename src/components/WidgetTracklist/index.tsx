@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import ContentBlock from '../ContentBlock';
 import Spinner from '../Spinner';
-import './styles.scss';
+import styles from './styles.module.scss';
 
 interface IWidgetTrackList {
   width?: string | number;
@@ -16,7 +16,7 @@ function WidgetTrackList({ width = '100%', height = 440, className = '' }: IWidg
     setLoading(false);
   };
   return (
-    <ContentBlock className={`tracklist ${className}`}>
+    <ContentBlock className={`${styles.tracklist} ${className}`}>
       {loading && (
         <div className="loader">
           <Spinner />

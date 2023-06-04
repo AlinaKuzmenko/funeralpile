@@ -1,5 +1,5 @@
 import Text from '../Text';
-import './styles.scss';
+import styles from './styles.module.scss';
 
 // define interface to represent component props
 interface IHeading2 {
@@ -11,7 +11,7 @@ function Heading2({ className, children }: IHeading2) {
   return (
     <Text
       variant="h2"
-      className={`heading2 ${className}`}
+      className={`${styles.heading2} ${className}`}
     >
       {children}
     </Text>

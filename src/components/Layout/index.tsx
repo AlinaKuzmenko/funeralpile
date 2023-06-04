@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.scss';
+import styles from './styles.module.scss';
 
 interface IContent {
   className?: string;
@@ -8,8 +8,8 @@ interface IContent {
 
 function Layout({ children, className = '' }: IContent) {
   return (
-    <div className="layout">
-      <div className={`content ${className}`}>
+    <div className={styles.layout}>
+      <div className={`${styles.content} ${className}`}>
         {children}
       </div>
     </div>

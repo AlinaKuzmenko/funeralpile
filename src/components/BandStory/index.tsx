@@ -2,11 +2,11 @@ import Text from '../Text';
 import Heading2 from '../Heading2';
 import ContentBlock from '../ContentBlock';
 import { story } from './info';
-import './styles.scss';
+import styles from './styles.module.scss';
 
 function BandStory({ className }: { className?: string }) {
   return (
-    <ContentBlock className={`bandStory ${className}`}>
+    <ContentBlock className={`${styles.bandStory} ${className}`}>
       <Heading2>
         About
       </Heading2>

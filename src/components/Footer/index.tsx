@@ -1,10 +1,10 @@
 import Text from '../Text';
-import './styles.scss';
+import styles from './styles.module.scss';
 
 function Footer() {
   return (
     <footer>
-      <div className="container">
+      <div className={styles.container}>
         <Text
           variant="caption2"
           className="text"

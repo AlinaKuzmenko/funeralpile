@@ -1,6 +1,6 @@
 import Text from '../Text';
 import { IFigure } from './types';
-import './styles.scss';
+import styles from './styles.module.scss';
 
 const defaultImageProps = {
   src: '',
@@ -15,7 +15,7 @@ function Figure({
   className = '',
 }: IFigure) {
   return (
-    <figure className={className}>
+    <figure className={`${styles.figure} ${className}`}>
       <img
         loading="lazy"
         src={image.src || defaultImageProps.src}
