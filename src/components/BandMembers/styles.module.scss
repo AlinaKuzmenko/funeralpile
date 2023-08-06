@@ -54,6 +54,7 @@
 
 @media (min-width: $md) {
   .bandMembers {
+    grid-column: span 3;
     ul {
       grid-template-columns: repeat(6, 1fr);
       gap: toRem(24);

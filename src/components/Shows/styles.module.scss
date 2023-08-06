@@ -4,6 +4,9 @@
 @import '../../theme/breakpoints';
 
 .shows {
+  display: flex;
+  flex-direction: column;
+  gap: toRem(24);
   .heading {
     grid-column: span 2;
   }
@@ -12,17 +15,6 @@
     grid-template-columns: repeat(2, 1fr);
     gap: toRem(16);
   }
-  .figure {
-    width: 100%;
-    img {
-      height: auto;
-    }
-    figcaption {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-  }
 }
 
 @media (min-width: $xs) {
@@ -30,15 +22,21 @@
    .container {
       grid-template-columns: repeat(3, 1fr);
       gap: toRem(16);
-    }
+     .heading {
+       grid-column: span 3;
+     }
+   }
   }
 }
 
 @media (min-width: $md) {
   .shows {
    .container {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: toRem(24);
+     .heading {
+       grid-column: span 4;
+     }
     }
   }
 }
@@ -46,7 +44,6 @@
 @media (min-width: $xl) {
   .shows {
    .container {
-      grid-template-columns: repeat(6, 1fr);
       gap: toRem(32);
     }
   }

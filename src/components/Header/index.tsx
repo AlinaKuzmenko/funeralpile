@@ -14,8 +14,3 @@ function Header() {
 }
 
 export default Header;
-
-// create component SocialMedia in src/components
-// Path: src/components/SocialMedia/index.tsx
-// import useStyles from './styles';
-//

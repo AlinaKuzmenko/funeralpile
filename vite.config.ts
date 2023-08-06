@@ -7,7 +7,7 @@ export default (args) => {
   const generateScopedName = args.mode === 'production' ? '[hash:base64:5]' : '[local]_[hash:base64:2]';
   return defineConfig({
     plugins: [react()],
-    base: '/funeralpile', // TODO change to funeralpile
+    base: '/', // TODO change to funeralpile for github
     server: {
       port: 3030,
     },

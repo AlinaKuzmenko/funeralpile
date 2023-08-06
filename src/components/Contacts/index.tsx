@@ -4,18 +4,13 @@ import ContentBlock from '../ContentBlock';
 import { contacts, IEmail } from './info';
 import styles from './styles.module.scss';
 
-interface IContacts {
-  className?: string;
-  variant?: 'row' | 'column';
-}
-
-function Contacts({ className, variant = 'column' }: IContacts) {
+function Contacts() {
   return (
-    <ContentBlock className={`${styles.contacts} ${className}`}>
+    <ContentBlock className={styles.contacts}>
       <Heading2>
         Contacts
       </Heading2>
-      <div className={`${styles.container} ${variant}`}>
+      <div className={styles.container}>
         {contacts.emails.map((email: IEmail) => (
           <div
             key={email.address}

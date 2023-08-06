@@ -4,9 +4,9 @@ import ContentBlock from '../ContentBlock';
 import { story } from './info';
 import styles from './styles.module.scss';
 
-function BandStory({ className }: { className?: string }) {
+function BandStory() {
   return (
-    <ContentBlock className={`${styles.bandStory} ${className}`}>
+    <ContentBlock className={styles.bandStory}>
       <Heading2>
         About
       </Heading2>

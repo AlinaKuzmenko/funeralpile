@@ -9,8 +9,8 @@
   justify-content: space-between;
   margin: 0 auto;
   padding: 0;
+  background-image: url(./assets/background.webp);
   background-color: black;
-  background-image: none;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: scroll;
@@ -24,11 +24,5 @@
     background-color: rgba(0, 0, 0, .5);
     content: '';
     z-index: 0;
-  }
-}
-
-@media (min-width: $xl) {
-  #root {
-    background-image: url(./assets/header_bg.webp);
   }
 }

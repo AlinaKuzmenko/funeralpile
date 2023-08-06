@@ -31,7 +31,7 @@ export const gigs: IGig[] = [
   {
     name: 'Free and Easy',
     image: FAE,
-    date: new Date('June 25, 2023 18:00:00'),
+    date: new Date('July 25, 2023 18:00:00'),
     place: 'Munich',
     link: 'https://www.facebook.com/freeandeasyfestival',
     location: 'https://goo.gl/maps/8pfsD3wgPkjYCnoGA',

@@ -1,22 +1,22 @@
-import Text from '../Text';
-import Heading2 from '../Heading2';
-import ContentBlock from '../ContentBlock';
-import styles from './styles.module.scss';
+import MerchGroup from './MerchGroup';
+import { patches, records, tShirts } from './info';
 
-function Merch({ className }: { className?: string }) {
+function Merch() {
   return (
-    <ContentBlock className={`${styles.merch} ${className}`}>
-      <Heading2>
-        Merch
-      </Heading2>
-      <div className={styles.merchText}>
-        <Text variant="body2">Please visit our</Text>
-        <Text variant="body2">
-          <a href="https://funeralpile.bandcamp.com">Bandcamp Store</a>
-        </Text>
-        <Text variant="body2">to purchase our merch.</Text>
-      </div>
-    </ContentBlock>
+    <>
+      <MerchGroup
+        name="tShirt"
+        merchList={tShirts}
+      />
+      <MerchGroup
+        name="record"
+        merchList={records}
+      />
+      <MerchGroup
+        name="patch"
+        merchList={patches}
+      />
+    </>
   );
 }
 

@@ -6,19 +6,17 @@ import styles from './styles.module.scss';
 interface IWidgetTrackList {
   width?: string | number;
   height?: string | number;
-  className?: string;
-
 }
 
-function WidgetTrackList({ width = '100%', height = 440, className = '' }: IWidgetTrackList) {
+function WidgetTrackList({ width = '100%', height = 440 }: IWidgetTrackList) {
   const [loading, setLoading] = useState(true);
   const onLoad = () => {
     setLoading(false);
   };
   return (
-    <ContentBlock className={`${styles.tracklist} ${className}`}>
+    <ContentBlock className={styles.tracklist}>
       {loading && (
-        <div className="loader">
+        <div className={styles.loader}>
           <Spinner />
         </div>
       )}

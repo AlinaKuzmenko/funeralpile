@@ -5,13 +5,9 @@ import Figure from '../Figure';
 import Heading2 from '../Heading2';
 import styles from './styles.module.scss';
 
-interface IBandMembers {
-  className?: string;
-}
-
-function BandMembers({ className = '' }: IBandMembers) {
+function BandMembers() {
   return (
-    <ContentBlock className={`${styles.bandMembers} ${className}`}>
+    <ContentBlock className={styles.bandMembers}>
       <Heading2>
         Lineup
       </Heading2>

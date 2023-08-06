@@ -3,6 +3,7 @@ import { ROUTES } from './constants';
 import App from '../../App';
 import Live from '../../screens/Live';
 import Home from '../../screens/Home';
+// import Merch from '../../screens/Merch';
 import Error from '../../screens/Error';
 
 const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
         path: ROUTES.live,
         element: <Live />,
       },
+      // {
+      //   path: ROUTES.merch,
+      //   element: <Merch />,
+      // },
     ],
   },
 ]);

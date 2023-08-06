@@ -5,7 +5,7 @@ import styles from './styles.module.scss';
 
 function Gig({ gig }: { gig: IGig }) {
   return (
-    <div className={`${styles.gig} ${gig.date.getTime() < Date.now() ? 'past' : ''} `}>
+    <div className={`${styles.gig} ${gig.date.getTime() < Date.now() ? styles.past : ''} `}>
       <a
         href={gig.link}
         target="_blank"

@@ -9,4 +9,8 @@ export const links = [
     to: ROUTES.live,
     text: 'Live',
   },
+  // {
+  // to: ROUTES.merch,
+  // text: 'Merch',
+  // },
 ];

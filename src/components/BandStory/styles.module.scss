@@ -2,7 +2,23 @@
 @import '../../theme/breakpoints';
 
 .bandStory {
+  grid-row: 1 / 2;
   p:not(:last-child) {
     margin-bottom: toRem(12);
   }
 }
+
+@media (min-width: $md) {
+  .bandStory {
+    grid-row: 1 / 2;
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: $xl) {
+  .bandStory {
+    grid-column: span 2;
+  }
+}
+
+

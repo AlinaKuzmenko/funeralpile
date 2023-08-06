@@ -1,0 +1,9 @@
+export { default as imgCD } from './cd.jpeg';
+export { default as imgVinyl } from './vinyl.jpeg';
+export { default as imgPatch } from './patch.jpeg';
+export { default as imgEvoked } from './t_evoked_in_flames.jpeg';
+export { default as imgEvokedGirly } from './t_evoked_in_flames_girly.jpeg';
+export { default as imgEvokedGray } from './t_evoked_in_flames_gray_limited.jpeg';
+export { default as imgEvokedRed } from './t_evoked_in_flames_red_limited.jpeg';
+export { default as imgLogo } from './t_logo.jpeg';
+export { default as imgLogoGirly } from './t_logo_girly.jpeg';

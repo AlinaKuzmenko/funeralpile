@@ -21,7 +21,5 @@
     max-width: $layoutWidthWithShadow;
     min-height: 100%;
     padding: $contentPaddingTop toRem($contentPadding) $contentPaddingBottom;
-    background-color: rgba(0, 0, 0, .7);
-    box-shadow: 0 0 16px toRem($contentShadowSpread - 6) rgba(0, 0, 0, .7);
   }
 }

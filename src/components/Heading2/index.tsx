@@ -1,7 +1,6 @@
 import Text from '../Text';
 import styles from './styles.module.scss';
 
-// define interface to represent component props
 interface IHeading2 {
   children: string;
   className?: string;
