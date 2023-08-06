@@ -38,7 +38,7 @@ export const gigs: IGig[] = [
   },
   {
     name: 'Pure Fucking Metal Festevil',
-    image: PRMM, // TODO use another image
+    image: PRMM,
     date: new Date('August 26, 2023 18:00:00'),
     place: 'Laberweinting',
     link: 'https://www.facebook.com/PureFukingMetalFestevil',
