@@ -1,5 +1,5 @@
 export const ROUTES = {
-  home: '/',
-  live: 'live',
+  home: 'funeralpile/',
+  live: 'funeralpile/live',
   // merch: 'merch',
 };
